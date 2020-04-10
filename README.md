@@ -22,7 +22,7 @@
    ```json
    {
        "require": {
-           "abonline/php-jira-rest-client": "^1.43"
+           "abonline/php-jira-rest-client": "^1.44"
        }
    }
    ```
