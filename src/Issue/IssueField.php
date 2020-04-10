@@ -230,6 +230,24 @@ class IssueField implements \JsonSerializable
     }
 
     /**
+     * set issue reporter id.
+     *
+     * @param string $id
+     *
+     * @return $this
+     */
+    public function setReporterAccountId($id)
+    {
+        if (is_null($this->reporter)) {
+            $this->reporter = new Reporter();
+        }
+
+        $this->reporter->accountId = $id;
+
+        return $this;
+    }
+
+    /**
      * set issue assignee name.
      *
      * @param string $name
